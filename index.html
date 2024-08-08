@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region header -->
     <header>
       <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contacts</a></li>
+        <a class="logo" href="#footer"
+          >Web<span class="logo-span-header">Studio</span></a
+        >
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="#">Studio</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link" href="#">Contacts</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li>
+            <a class="menu-link-info" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="menu-link-info" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
@@ -27,39 +51,39 @@
     <!-- #region main -->
     <main>
       <!-- #region hero -->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="hero">
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button class="button" type="button">Order Service</button>
       </section>
       <!-- #endregion hero -->
       <!-- #region section 1 -->
       <section>
-        <h2>Features</h2>
+        <!-- <h2>Features</h2> -->
         <ul>
           <li>
-            <h3>Strategy</h3>
-            <p>
+            <h3 class="titles-section-1">Strategy</h3>
+            <p class="text-section-1">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
-            <p>
+            <h3 class="titles-section-1">Punctuality</h3>
+            <p class="text-section-1">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3>Diligence</h3>
-            <p>
+            <h3 class="titles-section-1">Diligence</h3>
+            <p class="text-section-1">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3>Technologies</h3>
-            <p>
+            <h3 class="titles-section-1">Technologies</h3>
+            <p class="text-section-1">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -68,8 +92,8 @@
       </section>
       <!-- #endregion section 1 -->
       <!-- #region section section 2 -->
-      <section>
-        <h2>Our Team</h2>
+      <section class="bg">
+        <h2 class="titles-sections">Our Team</h2>
         <ul>
           <li>
             <img
@@ -78,8 +102,8 @@
               width="264"
               height="260"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <h3 class="titles-section-2">Mark Guerrero</h3>
+            <p class="text-section-2">Product Designer</p>
           </li>
           <li>
             <img
@@ -88,8 +112,8 @@
               width="264"
               height="260"
             />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="titles-section-2">Tom Ford</h3>
+            <p class="text-section-2">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -98,8 +122,8 @@
               width="264"
               height="260"
             />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <h3 class="titles-section-2">Camila Garcia</h3>
+            <p class="text-section-2">Marketing</p>
           </li>
           <li>
             <img
@@ -108,18 +132,89 @@
               width="264"
               height="260"
             />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <h3 class="titles-section-2">Daniel Wilson</h3>
+            <p class="text-section-2">UI Designer</p>
           </li>
         </ul>
       </section>
       <!-- #endregion section 2 -->
+      <!-- #region section 3 -->
+      <section>
+        <h2 class="titles-sections">Our Portfolio</h2>
+        <ul>
+          <li>
+            <h3 class="titles-section-3">Banking App</h3>
+            <p class="text-section-3">App</p>
+            <img
+              src="./images/banking-app.jpg"
+              alt="banking-app"
+              width="360"
+              height="300"
+            />
+          </li>
+          <li>
+            <h3 class="titles-section-3">Cashless Payment</h3>
+            <p class="text-section-3">Marketing</p>
+            <img
+              src="./images/cashless-payment.jpg"
+              alt="cashless-payment"
+              width="360"
+              height="300"
+            />
+          </li>
+          <li>
+            <h3 class="titles-section-3">Meditation App</h3>
+            <p class="text-section-3">Apg</p>
+            <img
+              src="./images/meditation-app.jpg"
+              alt="meditation-app"
+              width="360"
+              height="300"
+            />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3 class="titles-section-3">Taxi Service</h3>
+            <p class="text-section-3">Marketing</p>
+            <img
+              src="./images/taxi-service.jpg"
+              alt="taxi-service"
+              width="360"
+              height="300"
+            />
+          </li>
+          <li>
+            <h3 class="titles-section-3">Screen Illustrations</h3>
+            <p class="text-section-3">Design</p>
+            <img
+              src="./images/screen-illustrations.jpg"
+              alt="screen-illustrations"
+              width="360"
+              height="300"
+            />
+          </li>
+          <li>
+            <h3 class="titles-section-3">Online Courses</h3>
+            <p class="text-section-3">Marketing</p>
+            <img
+              src="./images/online-courses.jpg"
+              alt="online-courses"
+              width="360"
+              height="300"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- #endregion section 3 -->
     </main>
     <!-- #endregion main -->
     <!-- #region footer -->
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <p>
+    <footer class="footer" id="footer">
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-span-footer">Studio</span></a
+      >
+      <p class="text-footer">
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
